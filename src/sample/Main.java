@@ -81,14 +81,14 @@ public class Main extends Application {
             actiontarget.setText("Vartotojas sukurtas");
         });
 
-        Button btn2 = new Button("Ieškoti");
-        HBox hbBtn2 = new HBox(10);
-        hbBtn2.setAlignment(Pos.BOTTOM_LEFT);
-        hbBtn2.getChildren().add(btn2);
-        grid.add(hbBtn2, 1, 6);
-        final Text actiontarget2 = new Text();
-        grid.add(actiontarget2, 1, 7);
-        btn2.setOnAction(e -> {
+        Button btnSearch = new Button("Ieškoti");
+        HBox hbBtnSearch = new HBox(10);
+        hbBtnSearch.setAlignment(Pos.BOTTOM_LEFT);
+        hbBtnSearch.getChildren().add(btnSearch);
+        grid.add(hbBtnSearch, 1, 6);
+        final Text actiontargetSearch = new Text();
+        grid.add(actiontargetSearch, 1, 7);
+        btnSearch.setOnAction(e -> {
             String vardas = userTextField.getText();
             String pavarde = surnameTextField.getText();
             String adresas = adressTextField.getText();
